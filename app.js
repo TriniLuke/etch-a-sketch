@@ -6,7 +6,7 @@ const rgbButton = document.getElementById('rgb');
 const clearButton = document.getElementById('clear');
 const size = document.querySelector('#sizeButton');
 
-
+//create sketchpad
 function sketchPad(col, row) {
     for(let i = 0; i < (col * row); i++) {
         const newBox = document.createElement('div');
@@ -17,6 +17,7 @@ function sketchPad(col, row) {
 }}
 sketchPad(16, 16);
 
+//create grayscale color
 function grayColor() {
     const boxes = container.querySelectorAll('.box');
     grayButton.addEventListener('click', () => {
@@ -28,6 +29,8 @@ function grayColor() {
 }
 grayColor();
 
+
+//create black color
 function blackColor() {
     const boxes = container.querySelectorAll('.box');
     blackButton.addEventListener('click', () => {
@@ -38,6 +41,8 @@ function blackColor() {
 }
 blackColor();
 
+
+//create RGB color
 function rgbColor() {
     const boxes = container.querySelectorAll('.box');
     rgbButton.addEventListener('click', () => {
@@ -51,6 +56,7 @@ function rgbColor() {
 }
 rgbColor();
 
+//button to clear all styling
     clearButton.addEventListener('click', () => {
         const boxes = container.querySelectorAll('.box');
         boxes.forEach(box => box.remove());
@@ -61,6 +67,7 @@ rgbColor();
     })
 
 
+//button to resize grid
     size.addEventListener('click', () => {
     let user = parseInt(prompt('What size grid do you want? Enter a number from 16 to 100'));
     if(user > 100){
