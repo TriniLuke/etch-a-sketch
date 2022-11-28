@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+}
+
+#container {
+    display: grid;
+    background-color: whitesmoke;
+    padding: 5px;
+    width: 700px;
+    height: 700px;
+    margin: auto;
+}
+.box {
+    display: grid;
+    background-color: whitesmoke;
+}
+.buttonHolder {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 5px;
+}
+.inputHolder {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 5px;
+}
+h1 {
+    color: blue;
+    text-align: center;
+}
+.cButton {
+    border: 5px solid blue;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    font-weight: 700;
+    padding: 10px;
+}
